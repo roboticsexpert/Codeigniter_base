@@ -1,5 +1,5 @@
  RewriteEngine On
-    RewriteBase /portal/
+    RewriteBase /portal
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond $1 !^(index\.php|images|scripts|styles|vendor|robots\.txt)

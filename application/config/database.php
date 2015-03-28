@@ -47,21 +47,22 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-/*
+///*
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = 'Parsoakhorsand';
 $db['default']['database'] = 'base_db';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = 'base_';
-*/
+//*/
+/*
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'c50aliesma';
 $db['default']['password'] = '918273645';
 $db['default']['database'] = 'c50hamin';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = 'base_';
-
+*/
 
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;

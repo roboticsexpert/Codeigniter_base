@@ -14,7 +14,8 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://hamin.org/portal/';
+//$config['base_url']	= 'http://hamin.org/portal/';
+$config['base_url']	= 'http://localhost/base/';
 
 /*
 |--------------------------------------------------------------------------
@@ -373,6 +374,11 @@ $config['license_segment_chars']=4;
 
 //address of image of cards
 $config['cart_image']='img.jpg';
+
+//this is defult template system 
+$config['header_css'] = array('style.css','bootstrap.css');
+$config['header_js']  = array('core.js','jquery.js','bootstrap.js');
+
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
