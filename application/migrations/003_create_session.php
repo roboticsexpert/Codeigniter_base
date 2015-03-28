@@ -1,0 +1,26 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Migration_create_session extends CI_Migration {
+
+	public function up()
+	{
+		$this->db->query(
+		"
+			CREATE TABLE IF NOT EXISTS  `{DBPREFIX}sessions` (
+			session_id varchar(40) DEFAULT '0' NOT NULL,
+			ip_address varchar(45) DEFAULT '0' NOT NULL,
+			user_agent varchar(120) NOT NULL,
+			last_activity int(10) unsigned DEFAULT 0 NOT NULL,
+			user_data text NOT NULL,
+			PRIMARY KEY (session_id),
+			KEY `last_activity_idx` (`last_activity`)
+			);
+		");
+	}
+
+	public function down()
+	{
+		$this->dbforge->drop_table('sessions');
+	}
+}
