@@ -8,3 +8,6 @@ application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 ._notes
+_nots
+.DS_Store
+Ds_Store
